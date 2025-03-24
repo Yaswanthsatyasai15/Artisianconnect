@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ArtisanConnect</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ArtisanConnect</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-listing.html">Products</a></li>
+        <li><a href="user-profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="cart-icon">
+          <a href="cart.html">🛒</a>
+          <span class="cart-badge" id="cart-count">0</span>
+        </li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Explore Our Products</h1>
+      <p>Discover unique handmade items from talented artisans around the world</p>
+    </section>
+
+    <section class="filter-section">
+      <div class="filter-container">
+        <div class="filter-group">
+          <label for="category-filter">Category:</label>
+          <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="jewelry">Jewelry</option>
+            <option value="ceramics">Ceramics</option>
+            <option value="textiles">Textiles</option>
+            <option value="woodwork">Woodwork</option>
+            <option value="art">Art</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="price-filter">Price Range:</label>
+          <select id="price-filter">
+            <option value="all">All Prices</option>
+            <option value="under-50">$0 - $50</option>
+            <option value="50-100">$50 - $100</option>
+            <option value="100-200">$100 - $200</option>
+            <option value="over-200">$200+</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="sort-filter">Sort By:</label>
+          <select id="sort-filter">
+            <option value="featured">Featured</option>
+            <option value="newest">Newest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="rating">Rating: High to Low</option>
+          </select>
+        </div>
+        
+        <button class="btn" id="apply-filters">Apply Filters</button>
+        <button class="btn btn-outline" id="reset-filters">Reset</button>
+      </div>
+    </section>
+
+    <section class="product-grid">
+      <!-- Product cards will be dynamically loaded here -->
+    </section>
+
+    <section class="pagination">
+      <button class="btn btn-outline" id="prev-page">Previous</button>
+      <div class="page-numbers">
+        <span class="page-number active">1</span>
+        <span class="page-number">2</span>
+        <span class="page-number">3</span>
+      </div>
+      <button class="btn btn-outline" id="next-page">Next</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>ArtisanConnect</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Help & Support

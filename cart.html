@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - ArtisanConnect</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ArtisanConnect</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-listing.html">Products</a></li>
+        <li><a href="user-profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="cart-icon">
+          <a href="cart.html">🛒</a>
+          <span class="cart-badge" id="cart-count">0</span>
+        </li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Your Shopping Cart</h1>
+    </section>
+
+    <section class="cart-container">
+      <div class="cart-items">
+        <h2>Cart Items</h2>
+        <div id="cart-items-list">
+          <!-- Cart items will be displayed here -->
+        </div>
+        <div id="empty-cart" class="empty-cart-message">
+          <p>Your cart is currently empty.</p>
+          <a href="product-listing.html" class="btn">Continue Shopping</a>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-item">
+          <span>Subtotal:</span>
+          <span id="cart-subtotal">$0.00</span>
+        </div>
+        <div class="summary-item">
+          <span>Shipping:</span>
+          <span id="cart-shipping">Calculated at checkout</span>
+        </div>
+        <div class="summary-item total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button class="btn" id="checkout-button">Proceed to Checkout</button>
+        <a href="product-listing.html" class="btn btn-outline">Continue Shopping</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>ArtisanConnect</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Payment Methods</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Artisan Resources</h3>
+        <ul>
+          <li><a href="#">Sell on ArtisanConnect</a></li>
+          <li><a href="#">Artisan Guidelines</a></li>
+          <li><a href="#">Artisan Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="payment-methods">
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+    </div>
+    <p class="copyright">© 2023 ArtisanConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

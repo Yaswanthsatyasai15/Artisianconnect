@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details - ArtisanConnect</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">ArtisanConnect</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product-listing.html">Products</a></li>
+        <li><a href="user-profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li class="cart-icon">
+          <a href="cart.html">🛒</a>
+          <span class="cart-badge" id="cart-count">0</span>
+        </li>
+      </ul>
+      <button class="mobile-menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-details">
+      <div class="product-gallery">
+        <div class="main-image">
+          <img id="main-product-image" src="" alt="Product main image">
+        </div>
+        <div class="thumbnail-container">
+          <div class="thumbnail active" data-image="">
+            <img src="" alt="Product thumbnail">
+          </div>
+          <div class="thumbnail" data-image="">
+            <img src="" alt="Product thumbnail">
+          </div>
+          <div class="thumbnail" data-image="">
+            <img src="" alt="Product thumbnail">
+          </div>
+        </div>
+      </div>
+
+      <div class="product-info-container">
+        <h1 id="product-name">Product Name</h1>
+        <div class="product-rating">
+          <span>★★★★★</span>
+          <span id="rating-count">(24)</span>
+        </div>
+        <p class="product-price" id="product-price">$0.00</p>
+        <p class="product-artisan" id="product-artisan">By <a href="#">Artisan Name</a></p>
+
+        <div class="product-meta">
+          <p><strong>Category:</strong> <span id="product-category">Category</span></p>
+          <p><strong>Availability:</strong> <span id="product-availability">In Stock</span></p>
+        </div>
+
+        <div class="product-quantity">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" min="1" value="1">
+        </div>
+
+        <div class="product-actions">
+          <button class="btn" id="add-to-cart">Add to Cart</button>
+          <button class="btn btn-outline" id="buy-now">Buy Now</button>
+        </div>
+
+        <div class="product-share">
+          <span>Share:</span>
+          <a href="#" class="share-icon">Facebook</a>
+          <a href="#" class="share-icon">Twitter</a>
+          <a href="#" class="share-icon">Pinterest</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-description">
+      <div class="section-header">
+        <h2>Product Description</h2>
+        <span class="divider"></span>
+      </div>
+      <div class="description-content" id="product-description">
+        <!-- Product description will be inserted here -->
+      </div>
+    </section>
+
+    <section class="product-reviews">
+      <div class="section-header">
+        <h2>Customer Reviews</h2>
+        <span class="divider"></span>
+      </div>
+      <div class="reviews-container">
+        <!-- Reviews will be inserted here -->
+      </div>
+      <div class="add-review">
+        <h3>Add a Review</h3>
+        <div class="rating-selection">
+          <label>Your Rating:</label>
+          <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+          </div>
+        </div>
+        <div class="review-form">
+          <label for="review-text">Your Review:</label>
+          <textarea id="review-text" rows="4"></textarea>
+          <button class="btn" id="submit-review">Submit Review</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-products">
+      <div class="section-header">
+        <h2>Related Products</h2>
+        <span class="divider"></span>
+      </div>
+      <div class="product-grid">
+        <!-- Related products will be inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>ArtisanConnect</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Help & Support</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Payment Methods</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Artisan Resources</h3>
+        <ul>
+          <li><a href="#">Sell on ArtisanConnect</a></li>
+          <li><a href="#">Artisan Guidelines</a></li>
+          <li><a href="#">Artisan Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="payment-methods">
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+      <div class="payment-icon"></div>
+    </div>
+    <p class="copyright">© 2023 ArtisanConnect. All rights reserved.</p>
+  </footer>
+
+  <script src="js/product-details.js"></script>
+</body>
+</html>

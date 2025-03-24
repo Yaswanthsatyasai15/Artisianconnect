@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - ArtisanConnect</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ArtisanConnect</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product-listing.html">Products</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-header">
+            <h1>My Profile</h1>
+            <div class="profile-actions">
+                <button id="edit-profile-btn">Edit Profile</button>
+                <button id="manage-listings-btn">Manage Listings</button>
+            </div>
+        </section>
+
+        <section class="profile-details">
+            <div class="profile-info">
+                <img id="profile-picture" src="img/default-profile.jpg" alt="Profile Picture">
+                <h2 id="user-name">John Doe</h2>
+                <p id="user-role">Artisan</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+
+            <div class="profile-stats">
+                <div class="stat-box">
+                    <h3>Products</h3>
+                    <p id="product-count">12</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Sales</h3>
+                    <p id="sale-count">45</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Reviews</h3>
+                    <p id="review-count">32</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-listings">
+            <h2>My Listings</h2>
+            <div class="listings-container">
+                <!-- Listing cards will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ArtisanConnect. All rights reserved.</p>
+    </footer>
+
+    <script src="js/user-profile.js"></script>
+</body>
+</html>

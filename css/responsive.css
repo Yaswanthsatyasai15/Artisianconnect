@@ -1,0 +1,55 @@
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu-btn {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+  
+    .product-card img {
+      height: 180px;
+    }
+  
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .nav-links li {
+      margin-left: 1rem;
+    }
+  
+    .product-card img {
+      height: 150px;
+    }
+  
+    .product-info {
+      padding: 1rem;
+    }
+  
+    .product-name {
+      font-size: 1rem;
+    }
+  }
